@@ -28,7 +28,7 @@ export default function Header() {
         <div className="w-[89px] h-[23px] left-[5px] top-[94px] absolute text-black text-[17px] font-normal font-['Inter']">Job Type</div>
         <div className="hidden sm:block">
           {jobTypes.map((type) => (
-            <label key={type} className="block">
+            <label key={type} className="block text-[14px] font-['Inter'] font-normal text-[#424242]">
               <input
                 type="radio"
                 value={type}
@@ -44,7 +44,7 @@ export default function Header() {
           <select
             value={selectedJobType}
             onChange={(e) => setSelectedJobType(e.target.value)}
-            className="w-[249px] h-[34px] left-0 top-[130px] absolute border rounded p-2 mb-4"
+            className="w-[249px] h-[34px] left-0 top-[130px] absolute border rounded p-2 mb-4 text-[14px] font-['Inter'] font-normal text-[#424242]"
           >
             {jobTypes.map((type) => (
               <option key={type} value={type}>

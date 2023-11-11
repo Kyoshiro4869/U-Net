@@ -11,12 +11,12 @@ export default function Home() {
       className={`flex flex-col items-center justify-between min-h-screen p-24 ${inter.className}`}
     >
       <h1 className="font-bold text-4xl">Job Postings</h1>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
         {/* Replace this with actual job data */}
         {Array(10).fill(null).map((_, index) => (
           <Link href={`/job/${index + 1}`} key={index}>
-            <a className="flex flex-col items-center border rounded shadow p-4">
-              <Image src="/path/to/image.jpg" alt="Job Image" width={100} height={75} />
+            <a className="flex flex-col items-center border rounded shadow p-6">
+              <Image src="/path/to/image.jpg" alt="Job Image" width={340} height={255} />
               <h2 className="font-bold text-xl mt-4">JOB TITLE {index + 1}</h2>
               <p className="mt-2">Job Type: Long-term Internship</p>
               <div className="flex items-center mt-2">

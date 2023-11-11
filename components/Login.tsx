@@ -16,16 +16,16 @@ export default function Login() {
         placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="mb-4 p-2 border rounded"
+        className="p-2 border rounded mb-4"
       />
       <input
         type="password"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className="mb-4 p-2 border rounded"
+        className="p-2 border rounded mb-4"
       />
-      <button type="submit" className="p-2 bg-blue-500 text-white rounded">
+      <button type="submit" className="p-2 rounded bg-blue-500 text-white">
         Login
       </button>
     </form>
